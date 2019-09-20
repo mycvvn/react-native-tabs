@@ -3,7 +3,12 @@
   "version": "1.0.2",
   "description": "A small library that uniquely handles simple tab operations",
   "main": "./src/index.js",
-  "keywords": ["react native tab view", "react native tab", "tabs react native", "react native tabs"],
+  "keywords": [
+    "react native tab view",
+    "react native tab",
+    "tabs react native",
+    "react native tabs"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,8 +25,7 @@
   "devDependencies": {
     "metro-react-native-babel-preset": "^0.56.0"
   },
-  "peerDependencies": {
-  },
+  "peerDependencies": {},
   "dependencies": {
     "prop-types": "^15.7.2",
     "react-native-button": "^2.4.0"

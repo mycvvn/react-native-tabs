@@ -12,7 +12,7 @@ $ yarn add @tickid/react-native-tabs
 ```
 
 ## Usage
-Sample code for a custom tab bar component that will navigate to scene when tab is clicked:
+Sample code to use this simple library:
 ```jsx
 import React, { Component } from 'react';
 import { Text } from 'react-native';
