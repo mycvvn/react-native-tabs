@@ -14,6 +14,7 @@ class Tabs extends Component {
         children: PropTypes.node,
         tabIndex: PropTypes.number,
         tabChangeDuration: PropTypes.number,
+        tabTitleStyle: ViewPropTypes.style,
         activeTabTitleStyle: ViewPropTypes.style,
         tabContainerStyle: ViewPropTypes.style,
         tabBodyStyle: ViewPropTypes.style,
@@ -26,6 +27,7 @@ class Tabs extends Component {
         children: null,
         tabIndex: 0,
         tabChangeDuration: 100,
+        tabTitleStyle: undefined,
         activeTabTitleStyle: undefined,
         tabContainerStyle: undefined,
         tabBodyStyle: undefined,
@@ -92,8 +94,9 @@ class Tabs extends Component {
     renderHeadings() {
         const titleActiveStyles = index => [
             styles.heading,
+            this.props.tabTitleStyle,
             (this.state.tabIndex === index) && styles.headingActive,
-            this.props.activeTabTitleStyle,
+            (this.state.tabIndex === index) && this.props.activeTabTitleStyle,
         ];
         const tabActiveStyles = index => [
             styles.headingTab,
