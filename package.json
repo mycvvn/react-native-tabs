@@ -1,0 +1,28 @@
+{
+  "name": "@tickid/react-native-tabs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mycvvn/react-native-tabs.git"
+  },
+  "author": "sondnpt00343",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mycvvn/react-native-tabs/issues"
+  },
+  "homepage": "https://github.com/mycvvn/react-native-tabs#readme",
+  "devDependencies": {
+    "metro-react-native-babel-preset": "^0.56.0"
+  },
+  "peerDependencies": {
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react-native-button": "^2.4.0"
+  }
+}
