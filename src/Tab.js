@@ -1,21 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { View, ViewPropTypes } from 'react-native';
 
-class Tab extends Component {
-    static propTypes = {
-        children: PropTypes.node,
-        heading: PropTypes.string.isRequired,
-        containerStyle: ViewPropTypes.style,
-    }
-
-    render() {
-        return (
-            <View style={this.props.containerStyle}>
-                {this.props.children}
-            </View>
-        );
-    }
+function Tab({children,containerStyle}) {
+    return <View style={containerStyle}>{children}</View>;
+  
+}
+Tab.propTypes = {
+    children: PropTypes.node,
+    heading: PropTypes.string.isRequired,
+    containerStyle: ViewPropTypes.style
 }
 
-export default Tab;
+export default Tab
